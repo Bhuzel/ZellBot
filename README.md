@@ -1,96 +1,66 @@
-![Logo](https://files.catbox.moe/obf6o0.jpg)
+![Logo](https://i.ibb.co.com/JVvpqjd/Logo-Zell-API.jpg)
 
-**😼 NekoBot | 1.7.0** | ***create by AxellNetwork***
+**ZellBot | 1.0.0 Version** | ***create by Bhuzel Ryhn, base from NekoBot***
 
 
-```> Simple WhatsApp bot Using Library Baileys```
+```> Simple WhatsApp bot Using Library Baileys Axell```
 
-```javascript
-{
-  message: Message { conversation: '>_ Welcome to NekoBot' },
-  type: 'conversation',
-  msg: '>_ Welcome to NekoBot',
-  isMedia: false,
-  key: {
-    remoteJid: '6285165556936@s.whatsapp.net',
-    participant: '6285165556936@s.whatsapp.net',
-    fromMe: false,
-    id: '5780C33F89C0BE600B6D71DF79C4FC02'
-  },
-  cht: '6285165556936@s.whatsapp.net',
-  fromMe: false,
-  id: '5780C33F89C0BE600B6D71DF79C4FC02',
-  device: 'android',
-  isBot: false,
-  isGroup: false,
-  participant: '6285165556936@s.whatsapp.net',
-  sender: '6285165556936@s.whatsapp.net',
-  mentions: [],
-  body: '>_ Welcome to NekoBot',
-  prefix: '',
-  command: '>_',
-  args: [ 'Welcome', 'to', 'NekoBot' ],
-  text: 'Welcome to NekoBot',
-  isOwner: true,
-  download: [AsyncFunction (anonymous)]
-}
-```
-## ⚙️ Settings Bot ***( settings.js )***
+
+## ⚙️ Settings Bot ( settings.js )
 
 ```javascript
 const fs = require('node:fs');
 
 const config = {
-    owner: ["6285215909004"],
-    name: "- nekoBot - Simple WhatsApp bot",
-    sessions: "sessions",
+    owner: ["6282352052566"], // Ganti jadi nomor kamu
+    name: "- ZellBot - Simple WhatsApp bot",
+    sessions: "sessions", // Jangan diganti deh kalo ini
     sticker: {
       packname: "Made by ",
-      author: "nekoBot"
+      author: "ZellBot" // Nama untuk hasil sticker nanti
     },
    messages: {
-      wait: "*( Loading )* Tunggu Sebentar...",
-      owner: "*( Denied )* Kamu bukan owner ku !",
-      premium: "*( Denied )* Fitur ini khusus user premium",
-      group: "*( Denied )* Fitur ini khusus group",
+      wait: "⏳ tunggu sebentar yaa..",
+      owner: "🧑‍💻 fitur untuk owner bot aja kaa..",
+      premium: "🥇 fitur khusus premium kaa..",
+      group: "👥 fiturnya cuman bisa dipake dalam grup kaa..",
+      botAdmin: "⚠️ cuman admin grup yang bisa pake fiturnya kaa..", 
+      grootbotbup: "🛠️ ZellBot belum jadi admin nih jadi gabisa pake fiturnya, hehe", 
    },
-   database: "neko-db",
+   database: "zell-db",
    tz: "Asia/Jakarta"
+   zellkey: "zellapi", // jangan lupa join ch Zell API, tiap bulan update apikey free (dengan limit)
 }
 
 module.exports = config
 ```
 
 
-## 👨‍💻 How to install/run
-
+## How to install and run in panel Pterodactyl 
 
 ```bash
-$ git clone https://github.com/AxellNetwork/NekoBot
-$ cd nekoBot
 $ npm install
 $ npm start
 ```
 
-## ☘️ Example Features
-Berikut cara menambahkan fitur pada bot ini
 
+## Example Add Features Plugins and Case
 ## 1. Plugins
 
 ```javascript
 
 module.exports = {
-    command: "tes", //- Nama fitur nya
-    alias: ["tesbot", "testing"], //- Short cut command
-    category: ["main"], //- Kategori Fitur 
+    command: "tes", // Command botnya
+    alias: ["tesbot", "testing"], // Command lainnya
+    category: ["main"], // Kategori fiturnya mau apa?
     settings: {
-        owner: false, //-  Apakah Fitur ini khusus owner ?
-        group: false, // - Apakah Fitur ini khusus group ?
+        owner: false, // Jadiin true kalo mau hanya owner yang bisa pake
+        group: false, // Jadiin true kalo mau hanya group yang bisa pake
      },
-    description: "Tes bot saja", //- Penjelasan tentang fitur nya
-    loading: true, //- Ingin menambahkan loading messages ?
+    description: "Tes bot saja", // Deskripsi fiturnya
+    loading: true, // Untuk mengaktifkan wait message (didalam setting.js)
  async run(m, { sock, Func, Scraper, text, config }) {
-    m.reply("> Bot Online ✓")
+    m.reply("Bot Online ✓")
   }
 }
 ```
@@ -98,15 +68,12 @@ module.exports = {
 
 ```javascript
 case "tes" : {
-     m.reply("> Bot Online ✓")
+     m.reply("Bot Online ✓")
    }
 break
 ```
 ## 📢 Discussion 
-Jika ingin mengenal seputar Script ini lebih dalam lagi
-silahkan mampir ke komunitas kami
+Info mengenai apikey dan fitur yang di update? jangan lupa follow ch ini yaa
 
-[![WhatsApp Group](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/ErlaFMvdnfu5OGxCVGJW8V)
-
-[![WhatsApp channel](https://img.shields.io/badge/WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P)
+[![WhatsApp channel](https://img.shields.io/badge/WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb5oEUq4dTnIhbSu080e)
 
