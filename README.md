@@ -1,7 +1,6 @@
+## ZellBot | 1.0.0 Version | Create By Bhuzel Ryhn (ZellAPI), Base From NekoBot
+
 ![Logo](https://i.ibb.co.com/JVvpqjd/Logo-Zell-API.jpg)
-
-**ZellBot | 1.0.0 Version** | ***create by Bhuzel Ryhn, base from NekoBot***
-
 
 ```> Simple WhatsApp bot Using Library Baileys Axell```
 
