@@ -23,7 +23,7 @@ const config = {
   },
   database: "zell-db",
   tz: "Asia/Jakarta",
-  zellkey: "ZELL", // jangan lupa join ch Zell Api, tiap bulan update
+  zellkey: "zellapi", // jangan lupa join ch Zell Api, tiap bulan update
   apizell: "https://key.zellray.my.id"
 };
 
